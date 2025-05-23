@@ -1,0 +1,17 @@
+services:
+  email-service:
+    build: .
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - SMTP_PORT=2525
+    ports:
+      - '3000:3000'  # HTTP
+      - '25:2525'  # SMTP
+    volumes:
+      - .:/app          # monta código para hot‑reload
+      - node_modules:/app/node_modules  # preserva dependências dentro do container
+    restart: unless-stopped
+
+volumes:
+  node_modules:
