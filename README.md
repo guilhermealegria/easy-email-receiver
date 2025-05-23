@@ -18,8 +18,6 @@ docker compose down -v
 
 ## Teste Local com Swaks
 ```bash
-## Teste Local
-
 # Install swaks
 sudo apt update
 sudo apt install swaks
