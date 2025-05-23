@@ -15,8 +15,8 @@ docker compose down -v
 ```
 
 Endpoints REST:
-- **POST /api/accounts** `{"email":"user@dominio.com"}` – cria conta
-- **GET  /api/accounts** – lista contas
+- **POST /api/accounts** `{"email":"e-mail@dominio.com"}` – Cria uma conta
+- **GET  /api/accounts** – Lista de contas
 - **GET /api/accounts/${e-mail@dominio.com}/emails** - Lista de E-mails
 - **GET /api/accounts/${e-mail@dominio.com}/emails/<id>** - Visualizar um E-mail
 
